@@ -1,0 +1,73 @@
+:root {
+  --middle-right-pos: 60%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #052D35;
+  font-style: italic;
+  font-weight: bold;
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100vw;
+    background: linear-gradient(#FFCECE, #ffd48e);
+    line-height: 2rem;
+  }
+}
+
+// https://awe-some.net/2016/09/duo-tone-css/
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  & > * {
+    height: 100%;
+    display: flex;
+  }
+
+  .middle {
+    width: calc(100% - var(--middle-right-pos));
+    position: relative;
+    height: 2rem;
+    margin-right: 1rem;
+    .img-wrapper {
+      width: calc(100% - var(--middle-right-pos));
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+  
+      background-image: url('./img/IMG_3562.png');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      padding-bottom: 5vh;
+    }
+  }
+  .left, .right {
+    width: calc(var(--middle-right-pos) / 2);
+  }
+
+  .text-wrapper {
+    padding: 4rem 1rem;
+    font-size: .8rem;
+  }
+
+  #rightLyrics {
+    font-family: 'Kaisei Decol', serif;
+  }
+  #leftLyrics {
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+  span {
+    font-family: 'Mynerve', cursive;
+  }
+}

@@ -1,0 +1,24 @@
+doctype
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    //- title Lyrics with GPT
+    title The internet's my lemonade
+    link(rel='stylesheet', href='reset.css')
+    link(rel='stylesheet', href="style.css")
+    link(rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%2250%%22 y=%2250%%22 style=%22dominant-baseline:central;text-anchor:middle;font-size:90px;%22>🍋</text></svg>")
+    //- google fonts
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mynerve&family=Noto+Sans+JP:wght@500&family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
+  body
+    .container
+      .middle
+        .img-wrapper
+          iframe(style="border-radius:12px" src="https://open.spotify.com/embed/track/73PgneESQtlCqka4I11XM3?utm_source=generator" width="80%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy")
+      .left
+        p.text-wrapper#leftLyrics
+      .right
+        p.text-wrapper#rightLyrics
+    script(src="./script.js")
